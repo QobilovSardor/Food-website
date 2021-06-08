@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');  
+html
+{
+    box-sizing: border-box;
+}
+*, *::before, *::after
+{
+    box-sizing: inherit;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.dropdovn {
+    color: #fff;
+    font-size: 30px;
+}
+#check{
+    display: none;
+}
+.dropdovn{
+    display: none;
+}
+
+/* header */
+header{
+    position: fixed;
+    background-color: #2b303f;
+    width: 100%;
+    z-index: 3333;
+    top: 0;
+    left: 0;
+}
+header .container .logo h1 a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 50px;
+}
+header .container .logo h1 a span {
+    color: crimson;
+    font-size: 60px;
+}
+header .container .nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: inline-block;
+    padding-left: 20px;
+    transition: all 0.4s ease;
+}
+header .container .nav li a:hover {
+    color: gold;
+}
+header .container .nav #nth {
+    padding: 0;
+}
+/* baner-qimsi */
+.banner{
+    /* width: 100%; */
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+}
+.banner .textBx {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+}
+.banner .textBx h1 {
+    font-weight: bold;
+    font-size: 60px;
+}
+button {
+    background-color: #ff015f;
+    color: #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border: none;
+}
+button:hover {
+    letter-spacing: 5px;
+}
+
+/* about-qismi */
+.about{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.about .text-box h1 {
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.about .text-box span {
+    color: #ff015f;
+    font-size: 60px;
+}
+.about .pisa img{
+    height: 400px;
+    object-fit: cover;
+}
+
+.title__text h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.title__text span {
+    color: #ff015f;
+    font-size: 60px;
+}
+.our__menue .imgBx{
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 35px rgba(0,0,0,.09);
+}
+/* buton */
+.buton button {
+    background-color: #ff015f;
+    color: #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border: none;
+}
+.buton button:hover {
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+/* testimonials-qsimi */
+.testimonials {
+    background-image: url(../img/bg2.jpg);  
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+    background-size: cover;
+}
+.testimonials .box{
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 10px;
+}
+.testimonials .box .img-two img{
+    width: 100px;
+    height: 100px;
+}
+.testimonials .box img{
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.testimonials .box p{
+    padding-top: 30px;
+    color: rgb(112, 112, 112);
+}
+
+.contact{
+    background-image: url(../img/bg3.jpg);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+.cardd{
+    margin-top: 50px;
+}
+.contact .cardd{
+    margin-top: 150px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 15px 50px rgba(0,0,0,.1);
+}
+.contact .cardd input, .contact .cardd textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(235, 234, 234);
+    resize: none;
+}
+.contact .cardd .formaBx input{
+    width: 30%;
+    background-color: #ff015f;
+}
+.contact textarea {
+    height: 150px;
+}
+.contact .cardd button {
+    color: #fff;
+}
+.contact button {
+    background-color: #ff015f;
+    color: #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    border: none;
+}
+button:hover {
+    letter-spacing: 5px;
+}
+
+/* footer start */
+
+.footer{
+    border-top: 2px solid rgb(228, 225, 225);
+    background-color: rgb(248, 248, 248);
+    color: rgb(0, 0, 0);
+}
+.footer .footer-text{
+    font-size: 20px;
+    text-align: center;
+}
+.footer .footer-text a{
+    color: #ff015f;
+    text-decoration: none;
+}
+
+/* @media(max-width: 1200px) */
+@media(max-width: 1200px) {
+    .about .row {
+        flex-direction: column;
+    }
+    .about .col-md-6 {
+        width: 100%;
+    }
+    .about .text-box {
+        margin-bottom: 50px;
+    }
+}
+
+/* @media(max-width: 700px) */
+@media(max-width: 700px) {
+    .about .text-box {
+        text-align: center;
+    }
+    .title__text {
+        margin-top: 0 !important;
+    }
+    .about {
+        padding-bottom: 50px;
+    }
+    .buton {
+        margin-top: 0 !important;
+    }
+    .imgText h5 {
+        text-align: center;
+    }
+    .expert {
+        text-align: center;
+    }
+}
+/* @media(max-width: 990px) */
+@media(max-width: 990px) {
+    .testimonials .col-md-4 {
+        width: 100%;
+    }
+    .testimonials .row {
+        /* flex-direction: column; */
+    }
+    .contact .col-md-6 {
+        width: 100%;
+    }
+}
+@media(max-width: 950px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 858px){
+    .checkbtn{
+        display: block;
+        color: #fff;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+        z-index: 200;
+    }
+    nav ul li{
+        display: block;
+        padding: 25px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    header .container .nav li a {
+        padding: 0;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+        margin-top: 30px;
+        display: inline-block;
+    }
+    .dropdovn{
+        display: block;
+    }
+}
+/* @media(max-width: 840px) */
+@media(max-width: 840px) {
+    .banner .textBx {
+        top: 30%;
+    }
+}
+/* @media(max-width: 460px) */
+@media(max-width: 460px) {
+    .about .pisa img{
+        height: 300px;
+        margin-bottom: 100px;
+    }
+    .contact .cardd {
+        padding: 25px;
+        text-align: center;
+    }
+    .testimonials .box img {
+        margin-top: 10px;
+    }
+    .testimonials .box p {
+        padding-top: 10px;
+    }
+    .about {
+        padding-top: 50px;
+    }
+    .contact .cardd button {
+        width: 100%;
+    }
+}
